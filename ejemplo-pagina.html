@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Mi primera web</title>
+</head>
+<body>
+  <div id="container">
+    <div id="header">Header</div>
+    <div id="main">
+      <div id="sidebar">Sidebar</div>
+      <div id="contents">Contents</div>
+    </div>
+    <div id="footer">Footer</div>
+  </div>
+</body>
+</html>
+  
+  //CSS
+ #container{
+  diplay: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 40px;
+}
+
+#sidebar {
+  background: #ffffbb;
+  width: 100px;
+  height: 400px;
+  border-right: 1px solid black;
+  padding-left: 20px;
+}
+
+#contents: {
+  
+}
+
+#header{
+  border: 1px solid black;
+  background: #aaffaa;
+  margin: 20px;
+}
+
+#main{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+#footer{
+  border: 1px solid black;
+  background: #ffaaff;
+}
