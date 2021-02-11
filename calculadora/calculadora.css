@@ -1,5 +1,5 @@
 #body{
-  background-color:black;
+  background-color:white;
 }
 .container{
     position:center;
@@ -19,7 +19,7 @@
     height:80px;
     width:180pt;
     top:6pt;
-    background-color:black;
+    background-color:white;
     display:flex;
     justify-content:center;
     align-items:center;
