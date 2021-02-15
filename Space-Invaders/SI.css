@@ -1,6 +1,6 @@
 #Space-Invaders{
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 400px;
     border: 1px black solid;
     border-radius: 10px;
     position: absolute;
@@ -30,9 +30,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
-#marciano{
-    width: 10px;
-    height: 10px;
-    margin-bottom: 10px;
-    
+#nave{
+    position:absolute;
+    top:88%;
+    left: 40%;
 }
