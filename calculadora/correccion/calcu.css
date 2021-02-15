@@ -1,0 +1,47 @@
+body{
+  justify-content: center;
+}
+
+
+#calculadora{
+  width: 250px;
+  height: fit-content;
+  border-radius: 10px;
+  border: 1px black solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+#pantalla{
+  widht: 100%;
+  height: 40px;
+  border: 1px black solid;
+  text-align: center;
+}
+#teclado{
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  display:flex;
+  flex-direction: row;
+  justify-contetn: space-between;
+}
+.boton{
+  border: 1px black solid;
+  border-radius: 5px;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+  background: darkgrey;
+  cursor: pointer;
+}
+.boton: hover{
+  background: darksalmon;
+}
