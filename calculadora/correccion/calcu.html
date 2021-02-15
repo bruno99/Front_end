@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href_ "styles.css">
+          <title>Calculadora</title>
+    <script>
+      function addValue(a){
+      document.getElementbyId("pantalla").innerHTML += a;
+      }
+      function solve(){
+        document.getElementById("pantalla").innerHTML= eval(document)
+      }
+      function clean(){
+        document getElementById("pantalla").innerHTML = "";
+      }
+      </script>
+  </head>
+  <body>
+    <div id ="calculadora">
+      <div id="pantalla">pantalla</div>
+      <div id="teclado">
+        <div onclick="addValue(1)" class="boton">1</div>
+        <div onclick="addValue(2)"class="boton">2</div>
+        <div onclick="addValue(3)"class="boton">3</div>
+        <div onclick="addValue('+')"class="boton">+</div>
+        <div onclick="addValue(4)"class="boton">4</div>
+        <div onclick="addValue(5)"class="boton">5</div>
+        <div onclick="addValue(6)"class="boton">6</div>
+        <div onclick="addValue('-')"class="boton">-</div>
+        <div onclick="addValue(7)"class="boton">7</div>
+        <div onclick="addValue(8)"class="boton">8</div>
+        <div onclick="addValue(9)"class="boton">9</div>
+        <div onclick="solve()"class="boton">=</div>
+        <div onclick="addValue(0)"class="boton">0</div>
+        <div onclick="addValue('/')"class="boton">/</div>
+        <div onclick="addValue('*')"class="boton">*</div>
+        <div onclick="clean()"class="boton">C</div>
+      </div>
+    </div>
+  </body>
+</html>
+         
