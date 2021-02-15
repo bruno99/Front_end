@@ -1,0 +1,38 @@
+#Space-Invaders{
+    width: 500px;
+    height: 500px;
+    border: 1px black solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 10px;
+
+}
+#score{
+    width:100%;
+    height: 20px;
+    border: 1px solid black;
+    font-size: 35px;
+    text-align: right;
+    max-width: 250px;
+}
+#Marcianos{
+    
+    width:100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#marciano{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+    
+}
