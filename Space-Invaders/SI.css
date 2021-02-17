@@ -9,8 +9,9 @@
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     padding-bottom: 10px;
+    background-color: pink;
 
 }
 #score{
@@ -21,17 +22,28 @@
     text-align: right;
     max-width: 250px;
 }
-#Marcianos{
-    
-    width:100%;
-    margin-top: 10px;
-    flex-wrap: wrap;
+.Marcianos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 100px;
+}
+
+.Marcianos div {
+    width: 40px;
+    height: 10px;
+}
+#marciano{
+  //no se que co** hacer aqui pero creo que algo
 }
 #nave{
     position:absolute;
     top:88%;
     left: 40%;
+}
+.meteorito{
+  background-color: red;
+}
+.disparo{
+  background-color: green;
 }
