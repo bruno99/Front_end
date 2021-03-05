@@ -1,5 +1,0 @@
-Crear una carrusel de imágenes como el de la página https://www.w3schools.com/howto/howto_js_slideshow.asp usando REACT.
-
-Las imágenes deben almacenarse en un array de urls (url a la imagen).
-El carrusel ocupará la parte baja de la página.
-Al hacer click sobre la imagen, se debe abrir la imagen en grande en la parte media alta de la página.
