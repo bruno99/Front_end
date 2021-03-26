@@ -1,0 +1,16 @@
+Crear una página web en React (o Next.js) que permita navegar por el universo de StarWarts utilizando la API pública https://swapi.dev/
+
+Debe tener los siguientes apartados:
+
+Películas.
+Personajes
+Planetas.
+Para cada apartado permitirá:
+
+Listar todos.
+Buscar
+Los resultados (de listar todos o de la búsqueda) deben poder ser mostrados:
+
+Según los devuela la API.
+Por orden alfabético ascendente.
+Por orden alfabéticos descendente.
