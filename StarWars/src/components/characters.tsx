@@ -56,7 +56,9 @@ const Characters:FC =(): JSX.Element=>{
             {data&&(
                 <div>
                     <div className="buttons" onClick={()=>{setState("list") }}>Chatacters List</div> //opcion lista entera
-                    <div className="buttons"  onClick={()=>{setState("search")}}>Search</div>         //opcion buscar                
+                    <div className="buttons"  onClick={()=>{setState("search")}}>Search</div>         //opcion buscar 
+                    <div className="buttons"  onClick={()=>{setState("alfabetic asc")}}>Alfabetic asc</div>         //opcion alfabetico  
+                    <div className="buttons"  onClick={()=>{setState("alfabetic dsc")}}>Alfabetic dsc</div>         //opcion alfabetico                 
                 </div>
             )}
         </div>
@@ -64,6 +66,24 @@ const Characters:FC =(): JSX.Element=>{
                         <div className="components">
                             {state==="list"&&data.map((value,index)=>{
                                 return <div className="text">{value.name}</div>
+                            })}
+                            {state==="alfabetic asc"&&data.map((value,index)=>{
+                                /*{data&&data.sort(function(a,b) 
+                                    {if (a.title > b.title) return 1;
+                                    if (a.title < b.title) return -1;
+                                    else{return 0;}}).map((value:Result)=>{
+                                        return <div className="text">{value.title}</div>
+                                    })}*/
+                                    return <div className="text">{value.name}</div>
+                            })}
+                             {state==="alfabetic dsc"&&data.map((value,index)=>{
+                               /* {data&&data.sort(function(a,b) 
+                                    {if (a.title < b.title) return 1;
+                                    if (a.title > b.title) return -1;
+                                    else{return 0;}}).map((value:Result)=>{
+                                        return <div className="text">{value.title}</div>
+                                    })}*/
+                                    return <div className="text">{value.name}</div>
                             })}
                             {state==="search"&&(
                                 <div className="components">

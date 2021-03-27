@@ -31,6 +31,7 @@ const Films:FC = (): JSX.Element=>{
     const [item, setItem] = useState<Result[]>();
     const [state,setState] = useState<string>("null");
     const [type,setType] = useState<string>("normal");
+    
 
     useEffect(()=>{
         fetch('https://swapi.dev/api/films/')
@@ -47,7 +48,9 @@ const Films:FC = (): JSX.Element=>{
             {data&&(
                 <div>
                     <div className="buttons" onClick={()=>{setState("list") }}>Films List</div> //opcion lista entera
-                    <div className="buttons"  onClick={()=>{setState("search")}}>Search</div>         //opcion buscar                
+                    <div className="buttons"  onClick={()=>{setState("search")}}>Search</div>         //opcion buscar 
+                    <div className="buttons"  onClick={()=>{setState("alfabetic asc")}}>Alfabetic asc</div>         //opcion alfabetico  
+                    <div className="buttons"  onClick={()=>{setState("alfabetic dsc")}}>Alfabetic dsc</div>         //opcion alfabetico                
                 </div>
             )}
         </div>
@@ -56,6 +59,29 @@ const Films:FC = (): JSX.Element=>{
                             {state==="list"&&data.map((value,index)=>{
                                 return <div className="text">{value.title}</div>
                             })}
+                            
+                             
+                            {state==="alfabetic asc"&&data.map((value,index)=>{
+                                /*{data&&data.sort(function(a,b) 
+                                    {if (a.title > b.title) return 1;
+                                    if (a.title < b.title) return -1;
+                                    else{return 0;}}).map((value:Result)=>{
+                                        return <div className="text">{value.title}</div>
+                                    })}*/
+                                    return <div className="text">{value.title}</div>
+                            })}
+                             {state==="alfabetic dsc"&&data.map((value,index)=>{
+                               /* {data&&data.sort(function(a,b) 
+                                    {if (a.title < b.title) return 1;
+                                    if (a.title > b.title) return -1;
+                                    else{return 0;}}).map((value:Result)=>{
+                                        return <div className="text">{value.title}</div>
+                                    })}*/
+                                    return <div className="text">{value.title}</div>
+                            })}
+                    
+                    
+
                             {state==="search"&&(
                                 <div className="components">
                                     <input type="text" className="input_text" onChange={(e)=>{
