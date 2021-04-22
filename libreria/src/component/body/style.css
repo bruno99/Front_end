@@ -1,0 +1,48 @@
+.container_search{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grind{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+    justify-content: center;
+    margin: 10px;
+    height: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: fit-content;
+    width: 20%;
+    height: 400px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    margin-left: 45%px;
+}
+.button{
+    background-color: black;
+    color: palevioletred;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.texto_amz{
+    text-decoration: none;
+    background-color: black;
+    width: 50%;
+    color: palevioletred;
+    border-radius: 5px;
+    cursor: pointer;
+}
